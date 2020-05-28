@@ -1,5 +1,9 @@
 # TacoTuesday
 
+[![Gem Version](https://badge.fury.io/rb/taco_tuesday.svg)](https://badge.fury.io/rb/taco_tuesday)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8c6cacf5c39ce8e41175/maintainability)](https://codeclimate.com/github/DRBragg/taco_tuesday/maintainability)
+[![Build Status](https://travis-ci.org/DRBragg/taco_tuesday.svg?branch=master)](https://travis-ci.org/DRBragg/taco_tuesday)
+
 Adds a taco_tuesday? method to Ruby's Date and Times classes. Cause, well, tacos.
 
 ## Installation
