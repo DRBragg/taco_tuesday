@@ -19,6 +19,8 @@ And then execute:
 With the Date class:
 
 ```ruby
+require 'taco_tuesday'
+
 # May 26th 2020 is a Tuesday
 tuesday = Date.new(2020, 5, 26)
 tuesday.taco_tuesday? #=> true
@@ -34,6 +36,8 @@ Date.today.taco_tuesday? #=> Same result as Date.today.tuesday?
 Or with the Time class:
 
 ```ruby
+require 'taco_tuesday'
+
 # May 26th 2020 is a Tuesday
 tuesday = Time.new(2020, 5, 26)
 tuesday.taco_tuesday? #=> true
