@@ -28,13 +28,16 @@ require 'taco_tuesday'
 # May 26th 2020 is a Tuesday
 tuesday = Date.new(2020, 5, 26)
 tuesday.taco_tuesday? #=> true
+tuesday.🌮? #=> true
 
 # May 25th 2020 is a Monday
 monday = Date.new(2020, 5, 25)
 monday.taco_tuesday? #=> false
+monday.🌮? #=> false
 
 # Check if today is Taco Tuesday
 Date.today.taco_tuesday? #=> Same result as Date.today.tuesday?
+Date.today.🌮? #=> Same result as Date.today.taco_tuesday?
 ```
 
 Or with the Time class:
@@ -45,13 +48,16 @@ require 'taco_tuesday'
 # May 26th 2020 is a Tuesday
 tuesday = Time.new(2020, 5, 26)
 tuesday.taco_tuesday? #=> true
+tuesday.🌮? #=> true
 
 # May 25th 2020 is a Monday
 monday = Time.new(2020, 5, 25)
 monday.taco_tuesday? #=> false
+monday.🌮? #=> false
 
 # Check if today is Taco Tuesday
 Time.now.taco_tuesday? #=> Same result as Time.now.tuesday?
+Time.now.🌮? #=> Same result as Time.now.taco_tuesday?
 ```
 
 ## Development
