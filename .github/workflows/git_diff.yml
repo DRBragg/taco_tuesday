@@ -12,4 +12,4 @@ jobs:
     - name: Run git diff
       run: |
         echo ${{ github.base_ref }}
-        git diff --name-only --diff-filter=AM ${{ github.base_ref }} ${{ github.sha }}
+        git diff --name-only --diff-filter=AM ${{ github.event.pull_request.base.sha }} ${{ github.sha }}
