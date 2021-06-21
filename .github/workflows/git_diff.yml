@@ -1,0 +1,13 @@
+name: git diff
+
+on: pull_request
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run git diff
+      run: |
+        echo ${{ github.base_ref }}
+        git diff --name-only --diff-filter=AM ${{ github.base_ref }} ${{ github.sha }}
